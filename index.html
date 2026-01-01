@@ -8,101 +8,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    .rounded-image {
-      border-radius: 12px;
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .social-links {
-      text-align: center;
-      margin-top: 15px;
-    }
-
-    .name {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-bottom: 0.5em;
-    }
-
-    h2 {
-      font-size: 1.2em;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="assets/js/theme.js"></script>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
-    <tr>
-      <td style="padding:0px;">
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
-          <tr>
-            <td style="padding:2.5%;width:63%;vertical-align:middle;">
-              <p class="name" style="text-align: center;">Murari G</p>
-              <p style="text-align: justify;">
-                &nbsp;&nbsp;&nbsp;&nbsp; Systems Software & Compiler Engineer at SandLogic,
-                where I work on developing ML & Deep Learning compiler and runtime systems for
-                <a href="https://en.wikipedia.org/wiki/Edge_computing">Edge AI</a>.
-              </p>
-            </td>
-            <td style="padding:5%;width:40%;max-width:40%;text-align:center;vertical-align:top;">
-              <div style="margin-top:100px;margin-bottom:15px;">
-                <a href="profile.png">
-                  <img style="width:100%;max-width:100%;" alt="profile photo" src="profile.png" class="rounded-image">
-                </a>
-              </div>
-              <div class="social-links">
-                <a href="mailto:gmurari911@gmail.com" style="text-decoration:none;">
-                  <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="30"
-                    style="vertical-align:middle;">
-                </a> &nbsp;|&nbsp;
-                <a href="https://www.linkedin.com/in/murarig17/" style="text-decoration:none;">
-                  <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" alt="LinkedIn" width="30"
-                    style="vertical-align:middle;">
-                </a> &nbsp;|&nbsp;
-                <a href="https://github.com/Murari007" style="text-decoration:none;">
-                  <img src="https://img.icons8.com/fluency/48/000000/github.png" alt="GitHub" width="30"
-                    style="vertical-align:middle;">
-                </a>
-              </div>
-            </td>
-      </td>
-    </tr>
-  </table>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#research" class="nav-link">Research</a>
+      <a href="#projects" class="nav-link">Projects</a>
+    </div>
+  </nav>
 
-  <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
-    <tr>
-      <td style="padding:10px;width:100%;vertical-align:middle;">
-        <h2>Research and Projects</h2>
-        <p>
-        </p>
-      </td>
+  <!-- Theme Toggle Button -->
+  <button id="light-toggle" class="theme-toggle" title="Toggle theme">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <div class="main-content">
+    <section id="about">
+      <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
+        <tr>
+          <td style="padding:0px;">
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
+              <tr>
+                <td style="padding:2.5%;width:63%;vertical-align:middle;">
+                  <p class="name" style="text-align: center;">Murari G</p>
+                  <p style="text-align: justify;">
+                    &nbsp;&nbsp;&nbsp;&nbsp; Systems Software & ML Compiler Engineer at SandLogic,
+                    where I work on developing ML compiler and runtime systems for
+                    <a href="https://en.wikipedia.org/wiki/Edge_computing">Edge AI</a> & HPC.
+                  </p>
+                  <p style="text-align: justify;">
+                    &nbsp;&nbsp;&nbsp;&nbsp; Previously, worked with <a href="https://www.linkedin.com/in/doug-taylor-3b23bb62/">Doug Taylor</a> & <a href="https://www.linkedin.com/in/animesh-khemka-365a6a10/">Animesh Khemka</a> as part of the research team at NVIDIA,
+                    developing deep learning models for Auto White Balancing (AWB) in camera systems to improve image quality in real-time
+                    for autonomous driving applications.
+                  </p>
+                </td>
+                <td style="padding:5%;width:40%;max-width:40%;text-align:center;vertical-align:top;">
+                  <div style="margin-top:100px;margin-bottom:15px;">
+                    <a href="assets/images/profile.png">
+                      <img style="width:100%;max-width:100%;" alt="profile photo" src="assets/images/profile.png"
+                        class="rounded-image">
+                    </a>
+                  </div>
+                  <div class="social-links">
+                    <a href="mailto:gmurari911@gmail.com" title="Email">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/murarig17/" title="LinkedIn">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Murari007" title="GitHub">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </td>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="research">
+      <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
+        <tr>
+          <td style="padding:10px;width:100%;vertical-align:middle;">
+            <h2>Publications</h2>
+
+            <div class="card-container">
+              <!-- Publication Card 1 -->
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/images/thumbnail.png" alt="Navigating the Night publication thumbnail">
+                </div>
+                <div class="card-content">
+                  <a href="https://www.springerprofessional.de/en/navigating-the-night-robust-night-scene-semantic-segmentation-fo/51242710"
+                    class="card-title">Navigating the Night: Robust Night Scene Semantic Segmentation for Autonomous
+                    Driving</a>
+                  <p class="card-authors">
+                    <strong>Murari G</strong>, Prabha C. Nissimagoudar, Nalini C. Iyer, H. M. Gireesha
+                  </p>
+                  <p class="card-venue"><strong>CVIP 2024</strong> - 9th International Conference on Computer Vision and
+                    Image Processing, IITDM Kancheepuram
+                  </p>
+                  <div class="card-links">
+                    <a href="https://www.springerprofessional.de/en/navigating-the-night-robust-night-scene-semantic-segmentation-fo/51242710"
+                      class="card-link link-web">Link</a>
+                  </div>
+                  <p class="card-description">
+                    Addresses the critical challenge of semantic segmentation in low-light conditions by proposing a
+                    novel
+                    deep learning framework that enhances feature extraction and pixel-wise classification for nighttime
+                    driving scenarios, achieving significant improvements in segmentation accuracy under challenging
+                    illumination conditions.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <h2 style="margin-top: 40px;" id="projects">Projects</h2>
+
+            <div class="card-container">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+    </td>
     </tr>
-  </table>
-  </td>
-  </tr>
-  </table>
+    </table>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Murari G. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 
 </html>
